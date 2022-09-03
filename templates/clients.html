@@ -1,0 +1,28 @@
+{% extends 'banks.html' %}
+
+{% block clientdataview %}
+<table class="table table-dark table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">DNI</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Birth Date</th>
+            <th scope="col">Phone #</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for client in clientlist %}
+        <tr>
+            <th scope="row">{{ client.id }}</th>
+            <td>{{ client.dni }}</td>
+            <td>{{ client.firstname }}</td>
+            <td>{{ client.lastname }}</td>
+            <td>{{ client.birthdate }}</td>
+            <td>{{ client.phone }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
