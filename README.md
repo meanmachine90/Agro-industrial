@@ -12,3 +12,7 @@ x:> ----> Scripts\activate
 
 
 for the data I create a fake information, importing the data to PostgreSQL 
+
+I attached such files in case you needed.
+
+Alejandro V.
